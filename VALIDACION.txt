@@ -1,0 +1,16 @@
+SITRAC Windows - Alcance de verificacion
+
+1. Ejecutable compilado: Windows x64, subsistema GUI (sin consola), MinGW GCC 14.2.
+2. Compilacion de la interfaz: -Wall -Wextra -Werror, sin advertencias.
+3. Dependencias importadas: bibliotecas del sistema Windows; runtime C++ enlazado estaticamente.
+4. Pruebas originales: datos de ejemplo, eliminacion de ciudades y conexiones, flujo completo y recarga: SUPERADAS.
+5. Pruebas de integracion de formularios/modelo: CRUD, entradas invalidas, Dijkstra, FIFO, atencion, cancelacion, historial, busquedas, reportes, guardado y recarga: SUPERADAS.
+6. Pruebas de integracion ejecutadas con AddressSanitizer y UndefinedBehaviorSanitizer. La deteccion de fugas de LeakSanitizer se desactivo por incompatibilidad con el entorno de ejecucion.
+
+Limitacion: no se pudo ejecutar ni inspeccionar la ventana en una instalacion real de Windows desde este entorno. La compilacion y las pruebas del modelo no sustituyen esa comprobacion visual.
+
+Comprobacion sugerida en Windows:
+- Extraer todo el ZIP y abrir SITRAC.exe. Debe mostrar 6 ciudades, 9 rutas, 3 pasajeros y 2 pendientes.
+- Rutas > Calcular camino mas corto: Bogota a Cali, 461.00 km.
+- Registrar una ciudad, guardar, cerrar y abrir de nuevo; comprobar que permanece.
+- Probar navegar con Tab, redimensionar la ventana, exportar una consulta y cancelar el cierre con cambios.

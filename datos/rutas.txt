@@ -1,0 +1,9 @@
+Bogota|Medellin|415.5
+Bogota|Cali|461.0
+Medellin|Cali|380.2
+Bogota|Barranquilla|980.0
+Medellin|Barranquilla|720.5
+Cali|Barranquilla|850.0
+Bogota|Cartagena|1050.0
+Medellin|Cartagena|780.0
+Cali|Cartagena|900.0

@@ -1,0 +1,2 @@
+12345678|Bogota|Cali|2024-12-01|Atendido
+87654321|Medellin|Bogota|2024-11-15|Atendido
